@@ -1,0 +1,14 @@
+sudo mysql -u root -p
+mysql> show databases;
+mysql> create database A1T3Q1;
+mysql> use A1T3Q1;
+mysql> create table expression (gene VARCHAR(7), expr_value VARCHAR(10));
+mysql> INSERT INTO expression VALUES ("alr1207", "8303");
+mysql> INSERT INTO expression VALUES ("alr2938", "10323");
+mysql> INSERT INTO expression VALUES ("alr3395", "1432");
+mysql> INSERT INTO expression VALUES ("alr3556", "8043");
+mysql> INSERT INTO expression VALUES ("alr4392", "729");
+mysql> INSERT INTO expression VALUES ("alr4851", "633");
+mysql> INSERT INTO expression VALUES ("alr5000", "5732");
+mysql> show table expression;
+
