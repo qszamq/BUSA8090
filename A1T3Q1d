@@ -1,0 +1,1 @@
+mysql> SELECT metabolism COUNT(*) FROM annotation GROUP BY metabolism HAVING COUNT(*)>1;
