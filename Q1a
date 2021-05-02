@@ -1,0 +1,14 @@
+cd Documents/AWS
+ssh -i qsza.pem ubuntu@ec2-18-217-143-59.us-east-2.compute.amazonaws.com
+mkdir Assignment3
+cd Assignment3/
+curl -O https://downloads.mysql.com/docs/world_x-db.zip
+sudo apt install unzip
+unzip world_x-db.zip
+readlink -f world_x.sql
+cd Assignment3/world_x-db/
+sudo mysql -u root -p
+SOURCE /home/ubuntu/Assignment3/world_x-db/world_x.sql;
+show databases;
+use world_x;
+show tables;
